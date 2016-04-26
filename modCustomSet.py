@@ -14,3 +14,15 @@ class CustomSet:
             return True
         else:
             return False
+    def __len__(self):
+        """Description: counts elements in list
+        PreCond:self(list)
+        PostCond:returns count
+        """
+        tmpCT=0
+        alreadyCT = []
+        for ct in range(0,len(self)):
+            if self[ct] not in alreadyCT:
+                tmpCT +=1
+                alreadyCT.append(self)
+        return tmpCT
