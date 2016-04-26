@@ -6,3 +6,6 @@ result = set1>=set2
 print("Is set1 a superset of set2?:",result)
 result = set2>=set1
 print("is set2 a superset of set1?:",result)
+
+print("testing len...")
+print("len of set1:",len(set1))
