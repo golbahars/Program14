@@ -9,3 +9,6 @@ print("is set2 a superset of set1?:",result)
 
 print("testing len...")
 print("len of set1:",len(set1))
+
+print("Testing print...")
+print(set1)
