@@ -26,3 +26,13 @@ class CustomSet:
                 tmpCT +=1
                 alreadyCT.append(self)
         return tmpCT
+    def __str__(self):
+        """Description: prints list
+        PreCond:self(list)
+        PostCond:returns string
+        """
+        tmp = "{ "
+        for ct in range(0,len(self)-1):
+            tmp+=str(self[ct])+", "
+        tmp+=str(self[-1]) +" }"
+        return tmp
