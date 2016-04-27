@@ -13,9 +13,5 @@ class CustomSet:
         return newList
     
     def __and__(self,other):
-        newList = []
-        for a in self._setList:
-            if a in other._setList:
-                newList.append(a)
-        newList = CustomSet(newList)
+        newList = [a for a in self._setList if a in other._setList]
         return newList
