@@ -7,11 +7,11 @@ class CustomSet:
         
     def __add__(self,other):
         newList = [a for a in self._setList]
-        for a in other._setList:
-            newList.append(a)
+        newList+= [a for a in other._setList]
         newList = CustomSet(newList)
         return newList
     
     def __and__(self,other):
         newList = [a for a in self._setList if a in other._setList]
+        newList = CustomSet(newList)
         return newList
