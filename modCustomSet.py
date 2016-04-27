@@ -1,3 +1,6 @@
 class CustomSet:
-    def __init__:(self, tmpList):
-        self._setList = [a for a in tmpList if a not in self._setList]
+    def __init__(self,tmpList):
+        for a in tmpList:
+            while tmpList.count(a) > 1:
+                tmpList.remove(a)
+        self._setList = tmpList
